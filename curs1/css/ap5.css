@@ -1,0 +1,30 @@
+input:invalid{
+    border: 2px solid red;
+}
+
+input:invalid:required{
+    border-color: blue;
+}
+
+input:valid{
+    color: green;
+    border-color: green;
+    background-color: green
+}
+
+input[type='email']:focus{
+    text-transform: uppercase;
+}
+
+input[name='submit']{
+    background-color: transparent;
+}
+
+p:empty{
+    display: none;
+}
+
+h2::before,
+h2::after{
+    content:'***';
+}

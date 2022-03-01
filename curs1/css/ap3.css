@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+div{
+    border: 10px solid #ff0000;
+    padding: 50px 20px;
+}
+
+body > div{
+    background: purple;
+
+}
+
+div > div {
+    background: #fff;
+}
+
+div div > p,
+div div div > p{
+    color: #ff0000;
+}
+
+div > div > div {
+    background: cadetblue;
+
+}
