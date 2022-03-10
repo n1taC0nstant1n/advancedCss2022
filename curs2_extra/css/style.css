@@ -1,0 +1,172 @@
+
+.text {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  display: inline-block;
+}
+
+#heart:before, #heart:after
+ {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #aa0000;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  animation: pulsecolor 1s infinite;
+}
+#wrapper {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+  animation: pulse 1s infinite; 
+}
+@keyframes pulse {
+	10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #dd0000}
+} 
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+
+/* Aplicatia 2 */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 2rem;
+}
+.container img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+.container .card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container .card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+div.container,
+div.card {
+  transform: perspective(900px) rotateX(60deg) scale(0.7);
+  box-shadow: 0px 20px 100px #555;
+  transition: 0.5s ease all;
+}
+div.container:hover,
+div.card:hover {
+  transform: rotate(0deg) scale(1) translateY(10px);
+}
+/* Aplicatia 3 */
+.slider {
+    width: 3200px;/*640 x 5*/
+    height: 320px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+.slider li img {
+    float: left;
+}
+
+.slider {
+    animation: slider 10s linear infinite;
+}
+
+
+
+
+@keyframes slider {
+    0% {left: 0;}
+    13% {left: 0;}
+    25% {left: -640px;}
+    38% {left: -640px;}
+    50% {left: -1280px;}
+    63% {left: -1280px;}
+    75% {left: -1920px;}
+	88% {left: -1920px;}
+	100% {left: -2560px;}
+}
+
+
+/* Aplicatia 4 */
+div.ap4{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding:15px;
+  border:2px double red;
+  float: left;
+  /* overflow: hidden; */
+}
+div.ap4:nth-of-type(2n){
+  background-color:rgb(167, 221, 212);
+  box-shadow:mediumturquoise;
+}
+#div1 p{
+  word-wrap:normal;
+}
+#div2 p{
+  word-wrap: break-word;
+}
+#div3 p{
+  writing-mode:vertical-lr;
+
+}
+#div4 p{
+  writing-mode:vertical-rl;
+ 
+}
+#div5 p{
+  
+  direction:rtl;
+}
+#div6 p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+ 
+  
+  
+}
+
+
+
+
+
+

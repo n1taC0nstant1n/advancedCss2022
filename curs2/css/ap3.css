@@ -1,0 +1,15 @@
+div{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: double 2px red;
+    /* transition: width 2s ; */
+    transition: left 2s ;
+
+}
+div:hover{
+    left: 50%;
+}
