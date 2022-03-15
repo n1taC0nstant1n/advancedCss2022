@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia 5 </title>
+</head>
+<body>
+    <canvas id="myCanvas" width="100" height="100" 
+        style="border:1px solid #000000;background-color: green;">
+    </canvas>
+    <canvas width="300" height="300" id="canvas2"></canvas>
+</body>
+<script>
+    const canvas2 = document.getElementById('canvas2')
+    const ctx2 = canvas2.getContext('3d')
+    ctx2.fillStyle= 'red'
+    ctx2.fillRect(20, 20, 100, 100)
+</script>
+</html>
